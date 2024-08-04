@@ -1,0 +1,22 @@
+
+https://wsib.allianzseguros.com/drswep13/services/DailyActions.DailyActionsHttpsSoap11Endpoint/
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.allianz.com">
+<soapenv:Header/>
+<soapenv:Body>
+	<ws:getDailyActions>
+		<!--Optional:-->
+		<ws:Xml><![CDATA[
+	<DailyActionsRequest>
+     	<PartnerId>P0005966</PartnerId>
+     	<UserId>PA088611</UserId>
+     	<OwnerShip>ALZ</OwnerShip>
+     	<UniqueAgent>0036410</UniqueAgent>
+     	<IniDate>23/07/2024</IniDate>
+     	<EndDate>24/07/2024</EndDate>
+	</DailyActionsRequest>
+         ]]></ws:Xml>
+	</ws:getDailyActions>
+</soapenv:Body>
+</soapenv:Envelope>
+
