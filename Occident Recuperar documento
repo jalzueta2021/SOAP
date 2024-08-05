@@ -1,0 +1,36 @@
+
+https://pwapi.grupocatalanaoccidente.com/AGE/GESTION/DOCUMENTACION/BE/OBTENERDOCUMENTOS/OBTENERDOCUMENTOShub.api
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:con="http://be.catalanaoccidente.com/base/contexto" xmlns:obt="http://wcf.catalanaoccidente.com/AGE/Gestion/Documentacion/BE/ObtenerDocumentos/ObtenerDocumentos" xmlns:age="http://schemas.datacontract.org/2004/07/AGE.Gestion.Documentacion.BE.ObtenerDocumentos">
+   <soapenv:Header>
+      <con:ContextoOperacion>
+         <!--Optional:-->
+         <con:Propiedades>
+            <!--Zero or more repetitions:-->
+            <con:Propiedad>
+               <!--Optional:-->
+               <con:Nombre></con:Nombre>
+               <!--Optional:-->
+               <con:Valor></con:Valor>
+            </con:Propiedad>
+         </con:Propiedades>
+      </con:ContextoOperacion>
+   </soapenv:Header>
+   <soapenv:Body>
+      <obt:ObtenerDocumentos>
+         <!--Optional:-->
+         <obt:entrada>
+            <!--Optional:-->
+            <age:CodMediador>304749</age:CodMediador>
+            <!--Optional:-->
+            <age:CodObjeto>POLI</age:CodObjeto>
+            <!--Optional:-->
+            <age:CodPlataforma>MPM</age:CodPlataforma>
+            <!--Optional:-->
+            <age:Codcia>SPU</age:Codcia>
+            <!--Optional:-->
+            <age:Referencia>548537837</age:Referencia>
+         </obt:entrada>
+      </obt:ObtenerDocumentos>
+   </soapenv:Body>
+</soapenv:Envelope>
