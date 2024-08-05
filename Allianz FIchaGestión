@@ -35,3 +35,167 @@ https://wsib.allianzseguros.com/drswfg20/services/IndexaFGR.IndexaFGRHttpsSoap11
       </ser:indexDocument>
    </soapenv:Body>
 </soapenv:Envelope>
+
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"> 
+<soapenv:Header/>
+   <soapenv:Body>
+      <ser:indexDocument xmlns:ser="http://service.manage.allianz.com">
+         <!--Optional:-->
+         <ser:element><![CDATA[
+<DocumentArchiveRequestCapsule>
+    <authentication>
+        <company>ALZ</company>
+        <partnerId>P0005966</partnerId>
+        <agentId>PA088611</agentId>
+    </authentication>
+    <operationHeaders>
+        <operationTypeCode>LF</operationTypeCode>
+    </operationHeaders>
+    <operationData>
+        <LF_operationData>
+            <documentTipoReference>P</documentTipoReference>
+            <documentReference>
+                <policy>
+                    <policyNumber>055837158</policyNumber>
+                </policy>
+            </documentReference>
+            <view>PD</view>
+            <subview>08</subview>
+        </LF_operationData>
+    </operationData>
+</DocumentArchiveRequestCapsule>
+]]></ser:element>
+      </ser:indexDocument>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+055837158
+055834160
+042611896/00086
+
+------------------------------------------------------
+
+
+-----------------------------------------------------------------------------------------------------
+
+
+3.6.1	XML para el listado de documentos en Ficha Gestión:
+
+	<DocumentArchiveRequestCapsule>
+		 <authentication>
+			<company>ALZ</company>
+			<partnerId>P0005966</partnerId>
+			<agentId>PA088611</agentId>	
+		  </authentication>
+		  <operationHeaders>
+			<operationTypeCode>LF</operationTypeCode>
+		  </operationHeaders>
+		  <operationData>
+			<LF_operationData>
+				<documentTipoReference>S</documentTipoReference>
+				<documentReference>
+				   <claim>
+					 <claimNumber>873427831</claimNumber>
+				  </claim>
+				</documentReference>
+					<view>EP</view>
+					<subview>DB</subview>
+				</LF_operationData>
+		 	</operationData>
+	</DocumentArchiveRequestCapsule>
+
+
+-------------------------------------------------------------------------------------------------------
+3.5.1	XML para la recuperación documento Ficha Gestion:
+
+>>> faltaría filecode!!!!
+
+<DocumentArchiveRequestCapsule>
+  <authentication>
+	<company>ALZ</company>
+	<partnerId>P0005966</partnerId>
+	<agentId>PA088611</agentId>	
+  </authentication>
+  <operationHeaders>
+	<operationTypeCode>DF</operationTypeCode>
+  </operationHeaders>
+  <operationData>
+	<DF_operationData>
+		<documentTipoReference>P</documentTipoReference>
+		<documentReference>
+		 <policy>
+			<policyNumber>053368462</policyNumber>
+		</policy>
+		</documentReference>
+		<fileCode>743100130</fileCode>
+		<view>EP</view>
+		<subview>DB</subview>
+	</DF_operationData>
+  </operationData>
+</DocumentArchiveRequestCapsule>
+
+
+
+-------------------------------------------------------------------------------------------------------------
+
+3.4.1	XML para la recuperación modelos de Notas:
+
+<DocumentArchiveRequestCapsule>
+  <authentication>
+	<company>ALZ</company>
+	<partnerId>P0005966</partnerId>
+	<agentId>PA088611</agentId>	
+  </authentication>
+  <operationHeaders>
+	<operationTypeCode>ML</operationTypeCode>
+  </operationHeaders>
+  <operationData>
+	<ML_operationData>
+<actionType>N</actionType>
+		<documentTipoReference>P</documentTipoReference>
+		<documentReference>
+		 <policy>
+			<policyNumber>042611896</policyNumber>
+		</policy>
+		</documentReference>
+<view>EP</view>
+		<subview>DB</subview>
+	</ML_operationData>
+  </operationData>
+</DocumentArchiveRequestCapsule>
+
+
+
+-------------------------------------------------------------------------------------------------------------
+
+3.3.1	XML para la recuperación modelos de Imagen:
+
+<DocumentArchiveRequestCapsule>
+  <authentication>
+	<company>ALZ</company>
+	<partnerId>P0005966</partnerId>
+	<agentId>PA088611</agentId>	
+  </authentication>
+  <operationHeaders>
+	<operationTypeCode>ML</operationTypeCode>
+  </operationHeaders>
+  <operationData>
+	<ML_operationData>
+		<actionType>I</actionType>
+		<documentTipoReference>P</documentTipoReference>
+		<documentReference>
+			<policy>
+				<policyNumber>042611896</policyNumber>
+			</policy>
+		</documentReference>
+		<view>EP</view>
+		<subview>DB</subview>
+	</ML_operationData>
+  </operationData>
+</DocumentArchiveRequestCapsule>
+
+
+
+
+
